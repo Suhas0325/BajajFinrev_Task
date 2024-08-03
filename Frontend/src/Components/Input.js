@@ -22,7 +22,7 @@ function Input() {
       if (parsedData.data && Array.isArray(parsedData.data)) {
         setValidFormat(true);
         // Send the JSON data to the backend
-        const result = await fetch('http://localhost:3001/bfhl', {
+        const result = await fetch('https://bajaj-finrev-task-backend.vercel.app/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
